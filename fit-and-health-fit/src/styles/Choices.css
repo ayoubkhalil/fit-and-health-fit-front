@@ -1,0 +1,86 @@
+/* styles/Choices.css */
+.choices {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, #f4e3c1, #e8d29a, #d7c17f); /* Dégradé beige clair */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6a4e28; /* Titre avec une couleur beige foncée mais claire */
+    margin-bottom: 40px;
+    background: -webkit-linear-gradient(#6a4e28, #4d3827); /* Dégradé pour le titre */
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .category {
+    text-align: center;
+    width: 280px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom, #f9e8c8, #f1d59e); /* Dégradé beige clair à l'intérieur des cartes */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category:hover {
+    transform: scale(1.05); /* Effet de zoom léger au survol de la catégorie */
+  }
+  
+  .category-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #e8c78a; /* Bordure beige clair autour de l'image */
+  }
+  
+  .category-btn {
+    background: linear-gradient(to right, #f9e8c8, #f1d59e); /* Dégradé du bouton */
+    color: #4d3827; /* Texte plus foncé pour le bouton */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+    width: 100%;
+    max-width: 220px;
+    margin-top: 15px;
+  }
+  
+  .category-btn:hover {
+    background: linear-gradient(to right, #f1d59e, #e8c78a); /* Dégradé plus foncé pour le bouton au survol */
+  }
+  
+  .category h3 {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #6a4e28; /* Titre de la catégorie avec un ton beige foncé mais doux */
+  }
+  

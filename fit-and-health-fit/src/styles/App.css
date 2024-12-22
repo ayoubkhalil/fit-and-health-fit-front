@@ -1,0 +1,132 @@
+/* Global body style */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh; /* Full page height */
+    display: flex; /* Enable flexbox on the body */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  /* App container to make sure the form and image fill the screen */
+  .app-container {
+    display: flex;
+    height: 100%; /* Fill the full height of the screen */
+    width: 100%; /* Take full width of the screen */
+    flex-direction: row; /* Side by side layout */
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  /* Image section - takes 50% of the screen */
+  .image-section {
+    flex: 1; /* Take up 50% of the screen */
+    height: 100%;
+    position: relative;
+  }
+  
+  /* Style for the image */
+  .fitness-image {
+    width: 100%; /* Fill the entire container */
+    height: 100%; /* Fill the entire container */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Form section - takes 50% of the screen */
+  .form-section {
+    flex: 1; /* Take up 50% of the screen */
+    background: linear-gradient(to right, #f2a65a, #e76b39);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+    height: 100%; /* Ensure the form section takes full height */
+  }
+  
+  /* Title inside the form */
+  h2 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Form group styles */
+  .form-group {
+    width: 100%;
+    max-width: 350px; /* Limit width of form elements */
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Textarea for the feedback message */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    resize: none;
+  }
+  
+  /* Button styles */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: darkorange;
+  }
+  
+  /* Image hover effect */
+  .fitness-image:hover {
+    transform: scale(1.05); /* Slight zoom-in effect when hovering over the image */
+  }
+  
+  /* Footer styles */
+  .footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .app-container {
+      flex-direction: column; /* Stack the form and image vertically */
+    }
+  
+    .image-section,
+    .form-section {
+      height: 50%; /* Both sections take 50% of the screen height */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* Reduce heading size for smaller screens */
+    }
+  
+    button {
+      padding: 10px 20px; /* Smaller button on mobile */
+    }
+  }
+  

@@ -1,0 +1,82 @@
+.fitness-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .user-info {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .summary-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .lifestyle-summary {
+    flex: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-section {
+    flex: 1;
+  }
+  
+  .badge {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .high-activity {
+    background-color: #42a5f5;
+  }
+  
+  .low-activity {
+    background-color: #ef5350;
+  }
+  
+  .recommendation-section {
+    margin-top: 20px;
+    background: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .recommendation-text {
+    margin-top: 10px;
+    color: #2e7d32;
+  }
+  
+  .loading-text {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .error-text {
+    text-align: center;
+    font-size: 18px;
+    color: #e53935;
+  }
+  
