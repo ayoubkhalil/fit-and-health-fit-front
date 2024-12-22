@@ -28,7 +28,7 @@ function SignInForm() {
 
     try {
       console.log("Données envoyées : ", formData); // Vérification des données envoyées
-      const response = await fetch("https://fit-and-health-fit-front-1.onrender.com/auth/login", {
+      const response = await fetch("https://fit-and-health-fit-front-1.onrender.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
