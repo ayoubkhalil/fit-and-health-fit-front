@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api'; // Base URL de votre backend
+const API_URL = 'https://fit-and-health-fit-front-1.onrender.com'; // Base URL de votre backend
 
 // Fonction pour les appels API génériques
 const request = async (endpoint, method = 'GET', body = null, headers = {}) => {
